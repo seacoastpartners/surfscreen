@@ -12,6 +12,8 @@ Get started contributing to Surfscreen's codebase.
 
 ### Prerequisites
 
+Configure the following prerequisites:
+
 1. [Git (v2.x)](https://git-scm.com/downloads).
 
 2. [Node.js (LTS)](https://nodejs.org/en/download).
@@ -28,7 +30,9 @@ cd surfscreen
 git checkout -b <"feature || bug || enhancement">/<"your-branch-name"
 ```
 
-Install dependencies:
+### Install
+
+Install npm dependencies:
 
 ```sh
 npm install
