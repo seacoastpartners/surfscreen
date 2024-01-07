@@ -1,0 +1,28 @@
+{
+  "name": "surfscreen",
+  "private": "true",
+  "description": "Rotating surf cam screensaver",
+  "scripts": {
+    "dev": "npx esno -r dotenv/config src/index.ts",
+    "build": "tsc -outDir dist/index.js",
+    "lint": "eslint --ext .ts ./ --fix",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "playwright": "^1.40.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "@typescript-eslint/eslint-plugin": "^6.17.0",
+    "@typescript-eslint/parser": "^6.17.0",
+    "dotenv": "^16.3.1",
+    "eslint": "^8.56.0",
+    "esno": "^4.0.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.2.0",
+    "typescript": "^5.3.3"
+  },
+  "lint-staged": {
+    "*.{ts}": "npm run lint"
+  }
+}
